@@ -1,0 +1,56 @@
+.App {
+  box-sizing: border-box;
+  background-color: #f8f7da;
+  font-family: "Poppins", "Courier", "sans";
+  font-weight: normal;
+  border-radius: 15px;
+}
+
+div {
+  padding: 5px;
+}
+
+label {
+  padding: 5px;
+  padding-right: 6px;
+}
+
+input, select {
+  font-size: 1.05rem;
+  font-family: "Poppins", "Courier", "sans";
+  padding-left: 3px;
+  max-width: 80%;
+}
+
+#mass input, #time input {
+  max-width: 60px;
+}
+
+button {
+  background-color: #383849;
+  color: #f8f7da;
+  font-family: "Poppins", "Courier", "sans";
+  font-size: 1rem;
+  border-style: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0px auto;
+}
+
+#container {
+  text-align: center;
+}
+
+#remove {
+  margin-left: 5px;
+}
+
+#add {
+  margin-right: 5px;
+}
+
+#totalResult {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,80 @@
+//variables
+$font-stack: "Poppins", "Courier", "sans"
+
+$font-color: #383849
+$background-color: #fbeebb
+$primary-color: #f8f7da
+$secondary-color: #f9bc3e
+$accent-color: #80c86a
+$error-color: #e77858
+
+//basic looks  
+body 
+  background-color: $background-color
+  font-family: $font-stack
+  font-weight: normal
+
+body > *
+  background-color: $primary-color
+  border-style: none
+  color: $font-color
+  border-radius: 15px
+
+#navigation
+  background-color: $font-color
+  border-radius: 5px
+
+h1 
+  text-align: center
+  font-weight: bold
+
+//sizing and composition
+
+body
+  height: 100%
+  width: 100%
+
+body > * 
+  box-sizing: border-box
+  margin: 7px auto
+  width: 90%
+  max-width: 700px
+  font-size: 1.2rem
+
+#navigation
+  text-align: center
+  width: 70px
+  padding: 3px 8px
+  margin-left: 5px
+  margin-top: 5px
+
+h1 
+  font-size: 1.9rem
+  padding: 5px 0px
+  margin-top: 10px
+  margin-bottom: 15px
+
+
+
+//hover, cursors etc.
+
+a:link, a:visited, a:hover, a:active
+  text-decoration: none
+  font-weight: bold
+  color: $primary-color
+
+#navigation:hover 
+  background-color: $accent-color
+
+button:hover 
+  background-color: $accent-color
+  cursor: pointer
+
+label:hover 
+  cursor: pointer
+
+input:hover, select:hover 
+  border-color: $accent-color
+
+input:invalid, select:invalid 
+  border-color: $error-color
