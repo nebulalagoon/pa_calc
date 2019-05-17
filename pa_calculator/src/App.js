@@ -198,7 +198,7 @@ class SpecificActivity extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`http://localhost:5000/${this.state.activity}`)
+    fetch(`https://api.martahenc.from.hr/${this.state.activity}`)
       .then(res => res.json())
       .then (
         (result) => {
@@ -235,7 +235,7 @@ class SpecificActivity extends React.Component {
 
   componentDidUpdate(prevProps) {
     if (this.props.activity !== prevProps.activity) {
-      fetch(`http://localhost:5000/${this.state.activity}`)
+      fetch(`https://api.martahenc.from.hr/${this.state.activity}`)
       .then(res => res.json())
       .then (
         (result) => {
